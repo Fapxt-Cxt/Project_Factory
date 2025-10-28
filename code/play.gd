@@ -1,13 +1,21 @@
+
 extends CharacterBody2D
 
-const SPEED = 300
+const SPEED = 220
+
+var last_movement_direction: Vector2 = Vector2.ZERO
 
 @onready var anim = $player
 var last_dir = "front"
 
-func _physics_process(delta: float) -> void:
-	var direction = Vector2.ZERO
+func _ready():
+	add_to_group("pusher")
 
+func _physics_process(_delta: float) -> void:
+	var direction = Vector2.ZERO
+	var input_dir = Vector2(
+		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up"))
 	if Input.is_action_pressed("ui_up"):
 		direction = Vector2(0, -1)
 		anim.play("backidle")
@@ -24,15 +32,11 @@ func _physics_process(delta: float) -> void:
 		direction = Vector2(1, 0)
 		anim.play("rightidle")
 		last_dir = "right"
-		
-	if direction == Vector2(0,-1):
-		anim.play("backidle")
-	elif direction == Vector2(0,1):
-		anim.play("frontidle")
-	elif direction == Vector2(-1,0):
-		anim.play("leftidle")
-	elif direction == Vector2(1,0):
-		anim.play("rightidle")
-		
+
 	velocity = direction * SPEED
 	move_and_slide()
+	if input_dir != Vector2.ZERO:
+		last_movement_direction = input_dir.normalized()
+
+func get_last_movement_direction() -> Vector2:
+	return last_movement_direction
