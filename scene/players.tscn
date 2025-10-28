@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://lfuah5okk8n"]
+
+[ext_resource type="Script" uid="uid://jh00c5052boi" path="res://scene/players.gd" id="1_gldd0"]
+[ext_resource type="SpriteFrames" uid="uid://crjpr7g6jrtho" path="res://players_frame.tres" id="1_tq5p5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gldd0"]
+size = Vector2(14, 19)
+
+[node name="players" type="Node2D"]
+position = Vector2(16, 18)
+
+[node name="player" type="CharacterBody2D" parent="."]
+collision_mask = 2
+script = ExtResource("1_gldd0")
+
+[node name="player" type="AnimatedSprite2D" parent="player"]
+sprite_frames = ExtResource("1_tq5p5")
+animation = &"frontidle"
+frame_progress = 0.47695544
+
+[node name="player2" type="CollisionShape2D" parent="player"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_gldd0")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 4.0
+drag_vertical_enabled = true
+drag_horizontal_offset = 1.0
+drag_vertical_offset = 1.0
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0
+editor_draw_drag_margin = true
