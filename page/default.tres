@@ -1,6 +1,4 @@
-[gd_resource type="Theme" load_steps=9 format=4 uid="uid://cupmdv3q41x76"]
-
-[ext_resource type="Texture2D" uid="uid://7r151s5aifdw" path="res://PastelUIFree.png" id="1_nixot"]
+[gd_resource type="Theme" load_steps=8 format=4 uid="uid://cupmdv3q41x76"]
 
 [sub_resource type="Image" id="Image_frq1j"]
 data = {
@@ -855,7 +853,6 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3a8jl"]
-texture = ExtResource("1_nixot")
 region_rect = Rect2(183, 224, 52, 15)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mb6pw"]
