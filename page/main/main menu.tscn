@@ -88,7 +88,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_5d0og")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_iv0vr")
 text = "Start Game"
 
-[node name="HowToPlay" type="Button" parent="VBoxContainer"]
+[node name="exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("1_f0j1r")
@@ -98,9 +98,9 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_5d0og")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_mw7qi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_5d0og")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5d0og")
-text = "how to play"
+text = "exit"
 
-[node name="Exit" type="Button" parent="VBoxContainer"]
+[node name="howtoplay" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("1_f0j1r")
@@ -110,8 +110,8 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_5d0og")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_mw7qi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_5d0og")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_mw7qi")
-text = "exit"
+text = "How to play"
 
 [connection signal="pressed" from="VBoxContainer/play" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/HowToPlay" to="." method="_on_howtoplay_pressed"]
-[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/howtoplay" to="." method="_on_howtoplay_pressed"]
