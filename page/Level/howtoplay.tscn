@@ -1,0 +1,250 @@
+[gd_scene load_steps=24 format=3 uid="uid://egkkf08lkc0x"]
+
+[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://UI_TravelBook_BookCover01a.png" id="1_kj5ta"]
+[ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://page-main.png" id="1_xje88"]
+[ext_resource type="Texture2D" uid="uid://csi7jl8ctyqos" path="res://button/keyboard_115.png" id="2_tujdb"]
+[ext_resource type="Texture2D" uid="uid://bon1eai2kjnjq" path="res://button/keyboard_124.png" id="3_vw85o"]
+[ext_resource type="Texture2D" uid="uid://bis05w57nresg" path="res://button/keyboard_125.png" id="4_0fil1"]
+[ext_resource type="Texture2D" uid="uid://x7c4rlbvt0fb" path="res://button/keyboard_126.png" id="5_1jnue"]
+[ext_resource type="Texture2D" uid="uid://bkfs127s0g6xp" path="res://button/keyboard_171.png" id="6_dpw77"]
+[ext_resource type="Texture2D" uid="uid://dgd4s3n7ibncm" path="res://button/keyboard_172.png" id="7_w6251"]
+[ext_resource type="Texture2D" uid="uid://dfxob8qegkykh" path="res://button/keyboard_173.png" id="8_5fda3"]
+[ext_resource type="Texture2D" uid="uid://clcbg3lnditvh" path="res://button/keyboard_174.png" id="9_g1ris"]
+[ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://ThaleahFat.ttf" id="10_w6251"]
+[ext_resource type="Texture2D" uid="uid://b5gdhdh4rjetp" path="res://assess/Sprite-pscp2.png" id="11_eva1w"]
+[ext_resource type="Texture2D" uid="uid://cvee4jgfpqpor" path="res://assess/robot-right.png" id="12_xje88"]
+[ext_resource type="Texture2D" uid="uid://0o7cn1xt0kvi" path="res://assess/gate-AND.png" id="13_vf3ru"]
+[ext_resource type="Texture2D" uid="uid://c6wn6gfflsjxw" path="res://assess/box-right.png" id="14_aa3lg"]
+[ext_resource type="Texture2D" uid="uid://dsar7ohkqjqs3" path="res://assess/green-gate.png" id="15_ashjd"]
+[ext_resource type="Texture2D" uid="uid://bngjhs2g1hvji" path="res://assess/zero-gate.png" id="16_o5qii"]
+[ext_resource type="Texture2D" uid="uid://b2aq2ypt5f2j2" path="res://button/arrow.png" id="18_vf3ru"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xje88"]
+texture = ExtResource("1_xje88")
+modulate_color = Color(0.6666667, 0.7137255, 0.8156863, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vf3ru"]
+texture = ExtResource("1_kj5ta")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aa3lg"]
+texture = ExtResource("18_vf3ru")
+region_rect = Rect2(7, 7, 18, 17)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ashjd"]
+texture = ExtResource("18_vf3ru")
+region_rect = Rect2(7, 7, 18, 17)
+modulate_color = Color(0.5647059, 0.627451, 0.78431374, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5qii"]
+
+[node name="Howtoplay" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1545.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_xje88")
+
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 160.0
+offset_top = 152.0
+offset_right = 1392.0
+offset_bottom = 928.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vf3ru")
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 779.9995
+offset_top = 232.00006
+offset_right = 1006.9995
+offset_bottom = 351.00018
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8848488, 2.0601394)
+theme_override_fonts/font = ExtResource("10_w6251")
+theme_override_font_sizes/font_size = 16
+text = "Movement Controls
+     - Press W or ↑ to move up.
+     - Press S or ↓ to move down.
+     - Press A or ← to move left.
+     - Press D or → to move right."
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 832.0
+offset_top = 520.0
+offset_right = 1086.0
+offset_bottom = 697.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8036797, 2.028651)
+theme_override_fonts/font = ExtResource("10_w6251")
+theme_override_font_sizes/font_size = 16
+text = "Gameplay
+     - Push the gates (AND, OR, NOT) to
+       connect the circuits correctly.
+
+     - When the circuit is complete,
+       the light will \"turn on\" 
+       to complete the level.
+
+     - Use logic and clever layout
+       to solve the puzzle !"
+
+[node name="Label4" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 551.99994
+offset_top = 656.0
+offset_right = 617.99994
+offset_bottom = 707.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.2846823, 3.2846823)
+theme_override_fonts/font = ExtResource("10_w6251")
+text = "Correct
+
+Incorrect"
+
+[node name="Keyboard115" type="Sprite2D" parent="."]
+position = Vector2(352.00003, 296)
+scale = Vector2(2, 2)
+texture = ExtResource("2_tujdb")
+
+[node name="Keyboard124" type="Sprite2D" parent="."]
+position = Vector2(288.00003, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("3_vw85o")
+
+[node name="Keyboard125" type="Sprite2D" parent="."]
+position = Vector2(352.00003, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("4_0fil1")
+
+[node name="Keyboard126" type="Sprite2D" parent="."]
+position = Vector2(416.00003, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("5_1jnue")
+
+[node name="Keyboard171" type="Sprite2D" parent="."]
+position = Vector2(608, 296)
+scale = Vector2(2, 2)
+texture = ExtResource("6_dpw77")
+
+[node name="Keyboard172" type="Sprite2D" parent="."]
+position = Vector2(608, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("7_w6251")
+
+[node name="Keyboard173" type="Sprite2D" parent="."]
+position = Vector2(672, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("8_5fda3")
+
+[node name="Keyboard174" type="Sprite2D" parent="."]
+position = Vector2(544, 352)
+scale = Vector2(2, 2)
+texture = ExtResource("9_g1ris")
+
+[node name="SpritePscp2" type="Sprite2D" parent="."]
+position = Vector2(288.00003, 536)
+scale = Vector2(3, 3)
+texture = ExtResource("11_eva1w")
+
+[node name="RobotRight" type="Sprite2D" parent="."]
+position = Vector2(416, 536)
+scale = Vector2(3, 3)
+texture = ExtResource("12_xje88")
+
+[node name="GateAnd" type="Sprite2D" parent="."]
+position = Vector2(640, 536)
+scale = Vector2(3, 3)
+texture = ExtResource("13_vf3ru")
+
+[node name="GateAnd2" type="Sprite2D" parent="."]
+position = Vector2(480.00003, 536)
+scale = Vector2(3, 3)
+texture = ExtResource("13_vf3ru")
+
+[node name="BoxRight" type="Sprite2D" parent="."]
+position = Vector2(728, 536)
+scale = Vector2(3, 3)
+texture = ExtResource("14_aa3lg")
+
+[node name="GateAnd3" type="Sprite2D" parent="."]
+position = Vector2(288.00003, 736)
+scale = Vector2(3, 3)
+texture = ExtResource("13_vf3ru")
+
+[node name="BoxRight2" type="Sprite2D" parent="."]
+position = Vector2(376.00003, 736)
+scale = Vector2(3, 3)
+texture = ExtResource("14_aa3lg")
+
+[node name="GreenGate" type="Sprite2D" parent="."]
+position = Vector2(480, 672)
+scale = Vector2(3, 3)
+texture = ExtResource("15_ashjd")
+
+[node name="ZeroGate" type="Sprite2D" parent="."]
+position = Vector2(479.99997, 800)
+scale = Vector2(3, 3)
+texture = ExtResource("16_o5qii")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 472.0
+offset_top = 40.0
+offset_right = 552.0
+offset_bottom = 64.0
+grow_horizontal = 2
+scale = Vector2(7.447291, 7.447291)
+theme_override_fonts/font = ExtResource("10_w6251")
+theme_override_font_sizes/font_size = 16
+text = "How to play"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 336.0
+offset_top = 504.00003
+offset_right = 418.0
+offset_bottom = 527.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.8769581, 2.8769581)
+text = "→             →"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 56.0
+offset_right = 152.0
+offset_bottom = 136.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_aa3lg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ashjd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ashjd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o5qii")
