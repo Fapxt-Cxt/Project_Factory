@@ -1,0 +1,23 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b1wlerdpexfgd"]
+
+[ext_resource type="Texture2D" uid="uid://m4ylo6a1f2gx" path="res://Assets/picture/zero-gate.png" id="1_ao4oh"]
+[ext_resource type="Texture2D" uid="uid://dus0w8bul12vq" path="res://Assets/picture/green-gate.png" id="2_o4qmt"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ao4oh")
+}],
+"loop": true,
+"name": &"LED_off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_o4qmt")
+}],
+"loop": true,
+"name": &"LED_on",
+"speed": 5.0
+}]
