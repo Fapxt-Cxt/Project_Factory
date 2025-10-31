@@ -1,30 +1,30 @@
-[gd_scene load_steps=29 format=4 uid="uid://egkkf08lkc0x"]
+[gd_scene load_steps=29 format=4 uid="uid://fcm0ij043fc7"]
 
-[ext_resource type="Script" uid="uid://dm3cr1wmmk1ev" path="res://script/howtoplay.gd" id="1_aa3lg"]
-[ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="2_74ce8"]
-[ext_resource type="Texture2D" uid="uid://csi7jl8ctyqos" path="res://Assets/asset main/keyboard_115.png" id="2_tujdb"]
-[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="3_3t8k2"]
-[ext_resource type="Texture2D" uid="uid://bon1eai2kjnjq" path="res://Assets/asset main/keyboard_124.png" id="3_vw85o"]
-[ext_resource type="Texture2D" uid="uid://bis05w57nresg" path="res://Assets/asset main/keyboard_125.png" id="4_0fil1"]
-[ext_resource type="Texture2D" uid="uid://x7c4rlbvt0fb" path="res://Assets/asset main/keyboard_126.png" id="5_1jnue"]
-[ext_resource type="Texture2D" uid="uid://bkfs127s0g6xp" path="res://Assets/asset main/keyboard_171.png" id="6_dpw77"]
-[ext_resource type="Texture2D" uid="uid://dgd4s3n7ibncm" path="res://Assets/asset main/keyboard_172.png" id="7_w6251"]
-[ext_resource type="Texture2D" uid="uid://dfxob8qegkykh" path="res://Assets/asset main/keyboard_173.png" id="8_5fda3"]
-[ext_resource type="Texture2D" uid="uid://clcbg3lnditvh" path="res://Assets/asset main/keyboard_174.png" id="9_g1ris"]
-[ext_resource type="Texture2D" uid="uid://b5gdhdh4rjetp" path="res://Assets/asset main/Sprite-pscp2.png" id="11_eva1w"]
-[ext_resource type="Texture2D" uid="uid://cvee4jgfpqpor" path="res://Assets/asset main/robot-right.png" id="12_xje88"]
-[ext_resource type="Texture2D" uid="uid://0o7cn1xt0kvi" path="res://Assets/asset main/gate-AND.png" id="13_vf3ru"]
-[ext_resource type="Texture2D" uid="uid://c6wn6gfflsjxw" path="res://Assets/asset main/box-right.png" id="14_aa3lg"]
-[ext_resource type="Texture2D" uid="uid://dsar7ohkqjqs3" path="res://Assets/asset main/green-gate.png" id="15_ashjd"]
-[ext_resource type="Texture2D" uid="uid://bngjhs2g1hvji" path="res://Assets/asset main/zero-gate.png" id="16_o5qii"]
-[ext_resource type="Texture2D" uid="uid://b2aq2ypt5f2j2" path="res://Assets/asset main/arrow.png" id="18_vf3ru"]
+[ext_resource type="Script" uid="uid://dm3cr1wmmk1ev" path="res://script/howtoplay.gd" id="1_f4mbm"]
+[ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="2_c7tm0"]
+[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="3_owyag"]
+[ext_resource type="Texture2D" uid="uid://csi7jl8ctyqos" path="res://Assets/asset main/keyboard_115.png" id="4_0357b"]
+[ext_resource type="Texture2D" uid="uid://bon1eai2kjnjq" path="res://Assets/asset main/keyboard_124.png" id="5_thigk"]
+[ext_resource type="Texture2D" uid="uid://bis05w57nresg" path="res://Assets/asset main/keyboard_125.png" id="6_06njo"]
+[ext_resource type="Texture2D" uid="uid://x7c4rlbvt0fb" path="res://Assets/asset main/keyboard_126.png" id="7_elbrp"]
+[ext_resource type="Texture2D" uid="uid://bkfs127s0g6xp" path="res://Assets/asset main/keyboard_171.png" id="8_sylde"]
+[ext_resource type="Texture2D" uid="uid://dgd4s3n7ibncm" path="res://Assets/asset main/keyboard_172.png" id="9_guri4"]
+[ext_resource type="Texture2D" uid="uid://dfxob8qegkykh" path="res://Assets/asset main/keyboard_173.png" id="10_5r5c4"]
+[ext_resource type="Texture2D" uid="uid://clcbg3lnditvh" path="res://Assets/asset main/keyboard_174.png" id="11_qle8p"]
+[ext_resource type="Texture2D" uid="uid://b5gdhdh4rjetp" path="res://Assets/asset main/Sprite-pscp2.png" id="12_r8xa8"]
+[ext_resource type="Texture2D" uid="uid://cvee4jgfpqpor" path="res://Assets/asset main/robot-right.png" id="13_yd1e1"]
+[ext_resource type="Texture2D" uid="uid://0o7cn1xt0kvi" path="res://Assets/asset main/gate-AND.png" id="14_ucsmj"]
+[ext_resource type="Texture2D" uid="uid://c6wn6gfflsjxw" path="res://Assets/asset main/box-right.png" id="15_ixmcj"]
+[ext_resource type="Texture2D" uid="uid://dsar7ohkqjqs3" path="res://Assets/asset main/green-gate.png" id="16_0wfbo"]
+[ext_resource type="Texture2D" uid="uid://bngjhs2g1hvji" path="res://Assets/asset main/zero-gate.png" id="17_glfky"]
+[ext_resource type="Texture2D" uid="uid://b2aq2ypt5f2j2" path="res://Assets/asset main/arrow.png" id="18_olq13"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xje88"]
-texture = ExtResource("2_74ce8")
+texture = ExtResource("2_c7tm0")
 modulate_color = Color(0.6666667, 0.7137255, 0.8156863, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2yd3e"]
-texture = ExtResource("3_3t8k2")
+texture = ExtResource("3_owyag")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t7qei"]
 
@@ -356,18 +356,18 @@ cache/0/50/0/glyphs/69/uv_rect = Rect2(70, 1, 24, 24)
 cache/0/50/0/glyphs/69/texture_idx = 0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aa3lg"]
-texture = ExtResource("18_vf3ru")
+texture = ExtResource("18_olq13")
 region_rect = Rect2(7, 7, 18, 17)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ashjd"]
-texture = ExtResource("18_vf3ru")
+texture = ExtResource("18_olq13")
 region_rect = Rect2(7, 7, 18, 17)
 modulate_color = Color(0.5647059, 0.627451, 0.78431374, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5qii"]
 
 [node name="Howtoplay" type="Node2D"]
-script = ExtResource("1_aa3lg")
+script = ExtResource("1_f4mbm")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1545.0
@@ -394,42 +394,42 @@ texture = SubResource("CompressedTexture2D_t7qei")
 [node name="Keyboard115" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-76.16898, -51.14441)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("2_tujdb")
+texture = ExtResource("4_0357b")
 
 [node name="Keyboard124" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-87.76189, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("3_vw85o")
+texture = ExtResource("5_thigk")
 
 [node name="Keyboard125" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-76.16898, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("4_0fil1")
+texture = ExtResource("6_06njo")
 
 [node name="Keyboard126" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-64.57608, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("5_1jnue")
+texture = ExtResource("7_elbrp")
 
 [node name="Keyboard171" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-29.797379, -51.14441)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("6_dpw77")
+texture = ExtResource("8_sylde")
 
 [node name="Keyboard172" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-29.797379, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("7_w6251")
+texture = ExtResource("9_guri4")
 
 [node name="Keyboard173" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-18.204475, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("8_5fda3")
+texture = ExtResource("10_5r5c4")
 
 [node name="Keyboard174" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-41.39028, -39.64205)
 scale = Vector2(0.3622782, 0.41079846)
-texture = ExtResource("9_g1ris")
+texture = ExtResource("11_qle8p")
 
 [node name="Label" type="Label" parent="UiTravelBookBookCover01a"]
 anchors_preset = 8
@@ -500,47 +500,47 @@ Incorrect"
 [node name="SpritePscp2" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-87.76189, -1.8485947)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("11_eva1w")
+texture = ExtResource("12_r8xa8")
 
 [node name="RobotRight" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-64.57609, -1.8485947)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("12_xje88")
+texture = ExtResource("13_yd1e1")
 
 [node name="GateAnd" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-24.000927, -1.8485947)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("13_vf3ru")
+texture = ExtResource("14_ucsmj")
 
 [node name="GateAnd2" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-52.98318, -1.8485947)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("13_vf3ru")
+texture = ExtResource("14_ucsmj")
 
 [node name="BoxRight" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-8.06069, -1.8485947)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("14_aa3lg")
+texture = ExtResource("15_ixmcj")
 
 [node name="GateAnd3" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-87.76189, 39.231247)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("13_vf3ru")
+texture = ExtResource("14_ucsmj")
 
 [node name="BoxRight2" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-71.82165, 39.231247)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("14_aa3lg")
+texture = ExtResource("15_ixmcj")
 
 [node name="GreenGate" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-52.983185, 26.085709)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("15_ashjd")
+texture = ExtResource("16_0wfbo")
 
 [node name="ZeroGate" type="Sprite2D" parent="UiTravelBookBookCover01a"]
 position = Vector2(-52.983192, 52.376804)
 scale = Vector2(0.5434173, 0.6161977)
-texture = ExtResource("16_o5qii")
+texture = ExtResource("17_glfky")
 
 [node name="Label4" type="Label" parent="UiTravelBookBookCover01a"]
 anchors_preset = 8
