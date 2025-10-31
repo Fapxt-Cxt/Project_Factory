@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh8k38g77bj5j"
-path="res://.godot/imported/tileset_brown.png-3b9727f4ee8736036685b1d7a948950c.ctex"
+path="res://.godot/imported/tileset_brown.png-95fa9e3e1f948bdb8200d9a8fac6dda6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free CC0 Top Down Tileset Template Pixel Art by Rgsdev/Free CC0 Top Down Tileset Pixel Art/Tilesets/tileset_brown.png"
-dest_files=["res://.godot/imported/tileset_brown.png-3b9727f4ee8736036685b1d7a948950c.ctex"]
+source_file="res://Free CC0/Free CC0 Top Down Tileset Pixel Art/Tilesets/tileset_brown.png"
+dest_files=["res://.godot/imported/tileset_brown.png-95fa9e3e1f948bdb8200d9a8fac6dda6.ctex"]
 
 [params]
 
