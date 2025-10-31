@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxgo6fa80v5l"
-path="res://.godot/imported/mockup_green.png-ca01122fec2bdc969273bbcdbc295600.ctex"
+path="res://.godot/imported/mockup_green.png-4903cf140dfe6294f799753e7a4d0914.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free CC0 Top Down Tileset Template Pixel Art by Rgsdev/Free CC0 Top Down Tileset Pixel Art/Mockups/mockup_green.png"
-dest_files=["res://.godot/imported/mockup_green.png-ca01122fec2bdc969273bbcdbc295600.ctex"]
+source_file="res://Free CC0/Free CC0 Top Down Tileset Pixel Art/Mockups/mockup_green.png"
+dest_files=["res://.godot/imported/mockup_green.png-4903cf140dfe6294f799753e7a4d0914.ctex"]
 
 [params]
 
