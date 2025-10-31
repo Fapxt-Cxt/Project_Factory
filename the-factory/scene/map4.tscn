@@ -349,6 +349,7 @@ position = Vector2(593.04846, 368.32584)
 
 [node name="not" parent="TileMap" instance=ExtResource("29_mmwdf")]
 position = Vector2(208.82758, 432.45404)
+script = null
 
 [node name="or" parent="TileMap" instance=ExtResource("30_h3gt6")]
 position = Vector2(272.40768, 432.45404)
