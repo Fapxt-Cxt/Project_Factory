@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv3v1dpso15ma"]
+
+[ext_resource type="SpriteFrames" uid="uid://b1wlerdpexfgd" path="res://scene/led.tres" id="1_qiw2y"]
+[ext_resource type="Shape2D" uid="uid://s6by1ydas4a2" path="res://script/boxes.tres" id="3_y41fl"]
+
+[node name="LED" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_qiw2y")
+animation = &"LED_off"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("3_y41fl")
