@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3fklqkr2ayr8"
-path="res://.godot/imported/PastelUIFree2.png-618422df15d12ec15b7f28f1d69a6f1f.ctex"
+uid="uid://cthwq3dod7im5"
+path="res://.godot/imported/page-main.png-9fa85b1e7878cd3fb862684f6cd01eaa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/PastelUIFree2.png"
-dest_files=["res://.godot/imported/PastelUIFree2.png-618422df15d12ec15b7f28f1d69a6f1f.ctex"]
+source_file="res://Page/Level2/page-main.png"
+dest_files=["res://.godot/imported/page-main.png-9fa85b1e7878cd3fb862684f6cd01eaa.ctex"]
 
 [params]
 

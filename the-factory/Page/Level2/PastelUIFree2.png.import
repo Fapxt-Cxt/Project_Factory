@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfqyo5v80o2km"
-path="res://.godot/imported/UI_TravelBook_BookCover01a.png-c7af30de6b4037a236e728c8e6154aa1.ctex"
+uid="uid://c3fklqkr2ayr8"
+path="res://.godot/imported/PastelUIFree2.png-087f2400cfa786075ed0ef9facd1bab4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/UI_TravelBook_BookCover01a.png"
-dest_files=["res://.godot/imported/UI_TravelBook_BookCover01a.png-c7af30de6b4037a236e728c8e6154aa1.ctex"]
+source_file="res://Page/Level2/PastelUIFree2.png"
+dest_files=["res://.godot/imported/PastelUIFree2.png-087f2400cfa786075ed0ef9facd1bab4.ctex"]
 
 [params]
 
