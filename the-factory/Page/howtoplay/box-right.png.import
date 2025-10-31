@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6wn6gfflsjxw"
-path="res://.godot/imported/box-right.png-5d8976105c737ebfa7656382566dfac1.ctex"
+path="res://.godot/imported/box-right.png-3baa33c619624883bfc9843e3493418e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://howtoplay/box-right.png"
-dest_files=["res://.godot/imported/box-right.png-5d8976105c737ebfa7656382566dfac1.ctex"]
+source_file="res://Page/howtoplay/box-right.png"
+dest_files=["res://.godot/imported/box-right.png-3baa33c619624883bfc9843e3493418e.ctex"]
 
 [params]
 

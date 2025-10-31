@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5gdhdh4rjetp"
-path="res://.godot/imported/Sprite-pscp2.png-e98eb30b3d802d1b4d69dd5af7550438.ctex"
+path="res://.godot/imported/Sprite-pscp2.png-6118abb35c5208096a188eb6bad228b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://howtoplay/Sprite-pscp2.png"
-dest_files=["res://.godot/imported/Sprite-pscp2.png-e98eb30b3d802d1b4d69dd5af7550438.ctex"]
+source_file="res://Page/howtoplay/Sprite-pscp2.png"
+dest_files=["res://.godot/imported/Sprite-pscp2.png-6118abb35c5208096a188eb6bad228b4.ctex"]
 
 [params]
 

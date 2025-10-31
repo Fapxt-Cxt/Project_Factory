@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsar7ohkqjqs3"
-path="res://.godot/imported/green-gate.png-ac0c110e9e40b31cbce148a013416d5c.ctex"
+path="res://.godot/imported/green-gate.png-ff3b17f79b0942dbc55fcac9feabc1b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://howtoplay/green-gate.png"
-dest_files=["res://.godot/imported/green-gate.png-ac0c110e9e40b31cbce148a013416d5c.ctex"]
+source_file="res://Page/howtoplay/green-gate.png"
+dest_files=["res://.godot/imported/green-gate.png-ff3b17f79b0942dbc55fcac9feabc1b4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvee4jgfpqpor"
-path="res://.godot/imported/robot-right.png-b133063bcff3eee0ce3718f87235d676.ctex"
+path="res://.godot/imported/robot-right.png-c6e1c060fa832cc7c703494ad2871944.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://howtoplay/robot-right.png"
-dest_files=["res://.godot/imported/robot-right.png-b133063bcff3eee0ce3718f87235d676.ctex"]
+source_file="res://Page/howtoplay/robot-right.png"
+dest_files=["res://.godot/imported/robot-right.png-c6e1c060fa832cc7c703494ad2871944.ctex"]
 
 [params]
 
