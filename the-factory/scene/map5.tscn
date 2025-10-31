@@ -420,6 +420,10 @@ shape = SubResource("RectangleShape2D_q5upg")
 position = Vector2(696.5185, 435.3944)
 shape = SubResource("RectangleShape2D_q5upg")
 
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2(364.3327, 143.25159)
+shape = ExtResource("27_jvdoh")
+
 [node name="LED" parent="TileMap" instance=ExtResource("28_61kk4")]
 position = Vector2(624.3288, 144.37949)
 
