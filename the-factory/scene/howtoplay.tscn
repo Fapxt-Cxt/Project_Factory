@@ -1,7 +1,9 @@
-[gd_scene load_steps=27 format=4 uid="uid://egkkf08lkc0x"]
+[gd_scene load_steps=29 format=4 uid="uid://egkkf08lkc0x"]
 
 [ext_resource type="Script" uid="uid://dm3cr1wmmk1ev" path="res://script/howtoplay.gd" id="1_aa3lg"]
+[ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="2_74ce8"]
 [ext_resource type="Texture2D" uid="uid://csi7jl8ctyqos" path="res://Assets/asset main/keyboard_115.png" id="2_tujdb"]
+[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="3_3t8k2"]
 [ext_resource type="Texture2D" uid="uid://bon1eai2kjnjq" path="res://Assets/asset main/keyboard_124.png" id="3_vw85o"]
 [ext_resource type="Texture2D" uid="uid://bis05w57nresg" path="res://Assets/asset main/keyboard_125.png" id="4_0fil1"]
 [ext_resource type="Texture2D" uid="uid://x7c4rlbvt0fb" path="res://Assets/asset main/keyboard_126.png" id="5_1jnue"]
@@ -17,15 +19,14 @@
 [ext_resource type="Texture2D" uid="uid://bngjhs2g1hvji" path="res://Assets/asset main/zero-gate.png" id="16_o5qii"]
 [ext_resource type="Texture2D" uid="uid://b2aq2ypt5f2j2" path="res://Assets/asset main/arrow.png" id="18_vf3ru"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k0un0"]
-load_path = "res://.godot/imported/page-main.png-257c5ad8cab8e5ca1483fd017fb2e7ec.ctex"
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xje88"]
-texture = SubResource("CompressedTexture2D_k0un0")
+texture = ExtResource("2_74ce8")
 modulate_color = Color(0.6666667, 0.7137255, 0.8156863, 1)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2yd3e"]
+texture = ExtResource("3_3t8k2")
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t7qei"]
-load_path = "res://.godot/imported/UI_TravelBook_BookCover01a.png-683646812ef47c7b445a3ef3b72144e4.ctex"
 
 [sub_resource type="Image" id="Image_ijl7w"]
 data = {
@@ -373,6 +374,18 @@ offset_right = 1545.0
 offset_bottom = 960.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_xje88")
 
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 160.0
+offset_top = 151.0
+offset_right = 1392.0
+offset_bottom = 927.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2yd3e")
+
 [node name="UiTravelBookBookCover01a" type="Sprite2D" parent="."]
 position = Vector2(772.5, 545)
 scale = Vector2(5.5206194, 4.8685675)
@@ -424,10 +437,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -110.64154
-offset_top = -144.28995
-offset_right = 116.35846
-offset_bottom = -25.289833
+offset_left = 7.9229736
+offset_top = -67.049355
+offset_right = 234.92297
+offset_bottom = 51.950752
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.3768267, 0.4118715)
@@ -446,10 +459,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -101.22222
-offset_top = -85.13498
-offset_right = 152.77777
-offset_bottom = 91.86502
+offset_left = 7.1984177
+offset_top = -8.510574
+offset_right = 261.19843
+offset_bottom = 168.48943
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.35824904, 0.40293312)
@@ -472,10 +485,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -151.94118
-offset_top = -57.200684
-offset_right = -85.94117
-offset_bottom = -6.2006836
+offset_left = -37.180668
+offset_top = 21.683113
+offset_right = 28.81934
+offset_bottom = 72.68311
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.6443746, 0.6443746)
@@ -535,10 +548,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -191.06721
-offset_top = -88.421364
-offset_right = -109.067215
-offset_bottom = -65.421364
+offset_left = -79.20494
+offset_top = -10.153755
+offset_right = 2.7950592
+offset_bottom = 12.846245
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.5724159, 0.5724159)
