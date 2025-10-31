@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://iqcqihld6k8n"]
 
-[ext_resource type="Script" uid="uid://dogir7wt7gx07" path="res://block_and.gd" id="1_sqcfn"]
-[ext_resource type="Texture2D" uid="uid://bmivccldvy3dq" path="res://Assets/map 4/gate-AND.png" id="2_kewka"]
+[ext_resource type="Script" uid="uid://dogir7wt7gx07" path="res://script/block_and.gd" id="1_sqcfn"]
+[ext_resource type="Texture2D" path="res://Assets/map 4/gate-AND.png" id="2_kewka"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kck4s"]
 size = Vector2(26, 26)

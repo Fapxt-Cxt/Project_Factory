@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://6cg3xcaj0fvy"]
 
-[ext_resource type="Script" uid="uid://be2gcxbb1r3lw" path="res://box_and.gd" id="1_lps58"]
-[ext_resource type="Texture2D" uid="uid://bmivccldvy3dq" path="res://Assets/map 4/gate-AND.png" id="1_vx0tu"]
+[ext_resource type="Script" uid="uid://be2gcxbb1r3lw" path="res://script/box_and.gd" id="1_lps58"]
+[ext_resource type="Texture2D" path="res://Assets/map 4/gate-AND.png" id="1_vx0tu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lps58"]
 size = Vector2(26, 26)
