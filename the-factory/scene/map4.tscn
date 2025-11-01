@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://cr72p87x7ogql" path="res://Assets/picture/4-line.png" id="26_ytntt"]
 [ext_resource type="Texture2D" uid="uid://dgg1l0mlo3q8n" path="res://Assets/picture/box-left.png" id="27_rogkl"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="28_flltw"]
-[ext_resource type="Shape2D" path="res://scene/box.tres" id="28_v3pd0"]
+[ext_resource type="Shape2D" uid="uid://lsjuikf015gd" path="res://scene/box.tres" id="28_v3pd0"]
 [ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="29_mmwdf"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_h3gt6"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="31_ltaqs"]
