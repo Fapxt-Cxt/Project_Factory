@@ -205,3 +205,8 @@ text = "5
 "
 
 [connection signal="pressed" from="Button" to="." method="_on_goback_pressed"]
+[connection signal="pressed" from="LevelButton1" to="." method="_on_level_button_1_pressed"]
+[connection signal="pressed" from="LevelButton2" to="." method="_on_level_button_2_pressed"]
+[connection signal="pressed" from="LevelButton3" to="." method="_on_level_button_3_pressed"]
+[connection signal="pressed" from="LevelButton4" to="." method="_on_level_button_4_pressed"]
+[connection signal="pressed" from="LevelButton5" to="." method="_on_level_button_5_pressed"]

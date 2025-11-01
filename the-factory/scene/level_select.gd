@@ -13,3 +13,23 @@ func _process(delta: float) -> void:
 
 func _on_goback_pressed() -> void:
 	get_tree().change_scene_to_file("res://scene/main_menu.tscn")
+
+
+func _on_level_button_1_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/map1.tscn")
+
+
+func _on_level_button_2_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_level_button_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/map3.tscn")
+
+
+func _on_level_button_4_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/map4.tscn")
+
+
+func _on_level_button_5_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/map5.tscn")
