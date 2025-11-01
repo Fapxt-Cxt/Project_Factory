@@ -74,9 +74,9 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_naiid")
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 56.0
-offset_top = 56.0
+offset_top = 55.0
 offset_right = 152.0
-offset_bottom = 135.99997
+offset_bottom = 134.99997
 theme_override_styles/normal = SubResource("StyleBoxTexture_68dig")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_xxxbe")
 theme_override_styles/hover = SubResource("StyleBoxTexture_xxxbe")

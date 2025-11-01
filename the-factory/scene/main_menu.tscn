@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://script/main_menu.gd" id="1_14wem"]
 [ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="2_2atga"]
 [ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="3_by01r"]
-[ext_resource type="Theme" uid="uid://cupmdv3q41x76" path="res://default.tres" id="4_dclss"]
+[ext_resource type="Theme" uid="uid://sa7ncconj52m" path="res://default.tres" id="4_dclss"]
 [ext_resource type="Texture2D" uid="uid://dfqqvxmdthffq" path="res://Assets/asset main/PastelUIFree2.png" id="5_hmxu4"]
 [ext_resource type="Texture2D" uid="uid://bbtf4lj3dcrl7" path="res://Assets/asset main/PastelUIFree3.png" id="6_ictww"]
 

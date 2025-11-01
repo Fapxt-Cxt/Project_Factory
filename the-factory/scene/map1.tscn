@@ -403,4 +403,4 @@ position = Vector2(592.18787, 303.95004)
 position = Vector2(81.270065, 112.69449)
 
 [node name="or" parent="TileMap" instance=ExtResource("29_yl3vn")]
-position = Vector2(208.59317, 431.81494)
+position = Vector2(208.59317, 432.35675)
