@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dni1evo8h2utg"]
+
+[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="1_da3bo"]
+[ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="2_yu27i"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yu27i"]
+texture = ExtResource("1_da3bo")
+
+[node name="LevelPass" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -435.72412
+offset_top = -312.0
+offset_right = 435.72412
+offset_bottom = 312.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_yu27i")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.5
+offset_top = -256.0
+offset_right = 346.5
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_yu27i")
+theme_override_font_sizes/font_size = 128
+text = "Level Pass"
+horizontal_alignment = 1
