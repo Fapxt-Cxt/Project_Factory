@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cud2cgdan3nur"]
 
-[ext_resource type="Texture2D" uid="uid://bmivccldvy3dq" path="res://Assets/map 4/gate-AND.png" id="1_aw84j"]
 [ext_resource type="Script" uid="uid://ltpjn6v7tx1e" path="res://script/and.gd" id="1_owgya"]
+[ext_resource type="Texture2D" uid="uid://4egy0eqw5c4v" path="res://Assets/picture/gate-AND.png" id="2_v7162"]
 [ext_resource type="Shape2D" uid="uid://s6by1ydas4a2" path="res://script/boxes.tres" id="3_85bby"]
 [ext_resource type="Shape2D" uid="uid://dcdk8vqsog0a3" path="res://script/pusharea.tres" id="4_85bby"]
 
@@ -11,7 +11,7 @@ collision_mask = 2
 script = ExtResource("1_owgya")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_aw84j")
+texture = ExtResource("2_v7162")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = ExtResource("3_85bby")
