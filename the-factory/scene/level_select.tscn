@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bxw3f4ocbeeba"]
+[gd_scene load_steps=17 format=3 uid="uid://by0pa3e4b5h0p"]
 
 [ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="1_8h15g"]
+[ext_resource type="Script" uid="uid://dg7prs1dhpxi1" path="res://scene/level_select.gd" id="1_gulu6"]
 [ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="2_eo15b"]
 [ext_resource type="Texture2D" uid="uid://b2aq2ypt5f2j2" path="res://Assets/asset main/arrow.png" id="3_aa143"]
 [ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="4_naiid"]
@@ -44,6 +45,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gulu6")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -201,3 +203,5 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_iqvyi")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_68dig")
 text = "5
 "
+
+[connection signal="pressed" from="Button" to="." method="_on_goback_pressed"]
