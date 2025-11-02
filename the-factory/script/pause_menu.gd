@@ -1,20 +1,26 @@
 extends Control
 
-var is_paused = false setget set_is_paused
+var _is_paused: bool = false:
+	set = set_paused
+
+func _ready() -> void:
+	set_paused(false)
 
 func _unhandled_input(event):
 	if event.is_action_pressed("pause"):
-		self.is_paused = !is_paused
+		set_paused(!_is_paused)
 
-func set_is_paused(value):
-	is_paused = value
-	get_tree().pause = is_paused
-	visible = is_paused
-
+func set_paused(value: bool) -> void:
+	_is_paused = value
+	get_tree().paused = _is_paused
+	visible = _is_paused
 
 func _on_resume_pressed() -> void:
-	self.is_paused = false
+	set_paused(false)
 
+func _on_replay_pressed() -> void:
+	get_tree().paused = false
+	get_tree().reload_current_scene()
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
