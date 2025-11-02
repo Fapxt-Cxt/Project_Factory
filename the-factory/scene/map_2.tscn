@@ -1,7 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://b406iappdhd0o"]
+[gd_scene load_steps=32 format=3 uid="uid://b406iappdhd0o"]
 
 [ext_resource type="TileSet" uid="uid://c0pl8qy0lifd4" path="res://scene/map_2.tres" id="1_67ifn"]
 [ext_resource type="PackedScene" path="res://scene/door.tscn" id="6_x6071"]
+[ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="7_ttrcm"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="31_pniik"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_eh8v0"]
 [ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="33_2yh43"]
@@ -292,3 +293,8 @@ collision_mask = 1
 
 [node name="door" parent="TileMap" instance=ExtResource("6_x6071")]
 position = Vector2(663.70557, 276.86)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("7_ttrcm")]
+metadata/_edit_use_anchors_ = true

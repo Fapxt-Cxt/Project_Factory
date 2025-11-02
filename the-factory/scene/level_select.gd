@@ -16,11 +16,11 @@ func _on_goback_pressed() -> void:
 
 
 func _on_level_button_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://scene/map1.tscn")
+	get_tree().change_scene_to_file("res://scene/map_1.tscn")
 
 
 func _on_level_button_2_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scene/map_2.tscn")
 
 
 func _on_level_button_3_pressed() -> void:
