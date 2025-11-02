@@ -41,7 +41,7 @@ func _physics_process(delta):
 
 	# ✅ กันติดผนังหรือตัวละคร
 	if is_on_wall():
-		position += -push_direction * 0.5
+		position += -push_direction * 0.7
 
 func update_push_direction():
 	var total_direction = Vector2.ZERO
