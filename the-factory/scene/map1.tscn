@@ -407,4 +407,4 @@ position = Vector2(81.270065, 112.69449)
 position = Vector2(208.59317, 432.35675)
 
 [node name="door" parent="TileMap" instance=ExtResource("34_3cdxw")]
-position = Vector2(664.24725, 276.31824)
+position = Vector2(663.7055, 276.3182)
