@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bkyybqyj0x5vj"]
 
-[ext_resource type="Script" uid="uid://c8jj4l7dlrtjd" path="res://script/pause_menu.gd" id="1_cq4tv"]
+[ext_resource type="Script" uid="uid://bk8ctynrtc32a" path="res://script/pause_menu.gd" id="1_cq4tv"]
 [ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="1_me6vf"]
 [ext_resource type="Texture2D" uid="uid://v88jfut30g3m" path="res://Assets/asset main/button_pause.png" id="2_cq4tv"]
 
@@ -16,6 +16,7 @@ modulate_color = Color(0.7921569, 0.7921569, 0.7921569, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4q2vw"]
 
 [node name="PauseMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -83,4 +84,5 @@ text = "quit
 "
 
 [connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/Replay" to="." method="_on_replay_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://c2t07012djc1t"]
+[gd_scene load_steps=80 format=3 uid="uid://c2t07012djc1t"]
 
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_0dyqg"]
 [ext_resource type="Texture2D" uid="uid://dts060waio2l" path="res://Assets/picture/2line-box-right.png" id="2_ls1ak"]
@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="31_ltaqs"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_ls1ak"]
 [ext_resource type="PackedScene" uid="uid://bcug6wscknnhf" path="res://scene/door.tscn" id="37_3mhi2"]
+[ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_bidlu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x2rde"]
 texture = ExtResource("1_0dyqg")
@@ -445,3 +446,7 @@ position = Vector2(208.2795, 432.45398)
 [node name="door" parent="." instance=ExtResource("37_3mhi2")]
 position = Vector2(1193, 431)
 scale = Vector2(1.819247, 1.819247)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_bidlu")]
