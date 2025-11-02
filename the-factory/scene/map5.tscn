@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://dup4u5dr83bj0"]
+[gd_scene load_steps=78 format=3 uid="uid://dup4u5dr83bj0"]
 
 [ext_resource type="Texture2D" uid="uid://bdsllusnr20qj" path="res://Assets/picture/2line-broke-down.png" id="1_1tnxr"]
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_o43if"]
@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_1tnxr"]
 [ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="31_hkj0i"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_008qc"]
+[ext_resource type="PackedScene" uid="uid://bcug6wscknnhf" path="res://scene/door.tscn" id="38_q5upg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hkj0i"]
 texture = ExtResource("1_1tnxr")
@@ -469,3 +470,6 @@ position = Vector2(240.82057, 464.7217)
 
 [node name="not" parent="TileMap" instance=ExtResource("31_hkj0i")]
 position = Vector2(368.28064, 464.72168)
+
+[node name="door" parent="TileMap" instance=ExtResource("38_q5upg")]
+position = Vector2(695.95465, 277.4795)
