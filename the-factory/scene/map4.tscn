@@ -38,7 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_h3gt6"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="31_ltaqs"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_ls1ak"]
-[ext_resource type="PackedScene" path="res://scene/door.tscn" id="37_3mhi2"]
+[ext_resource type="PackedScene" uid="uid://c1fcgx0dw7q7e" path="res://scene/door.tscn" id="37_3mhi2"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_bidlu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x2rde"]
@@ -1016,4 +1016,3 @@ scale = Vector2(1.819247, 1.819247)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_bidlu")]
-visible = false
