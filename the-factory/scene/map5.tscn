@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://dup4u5dr83bj0"]
+[gd_scene load_steps=97 format=3 uid="uid://dup4u5dr83bj0"]
 
 [ext_resource type="Texture2D" uid="uid://bdsllusnr20qj" path="res://Assets/picture/2line-broke-down.png" id="1_1tnxr"]
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_o43if"]
@@ -46,9 +46,7 @@
 [ext_resource type="PackedScene" uid="uid://msh22qf3exg5" path="res://scene/door_5.tscn" id="40_p8jjy"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="41_gb83d"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="41_p8jjy"]
-[ext_resource type="Script" uid="uid://ltpjn6v7tx1e" path="res://script/and.gd" id="42_ddljd"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="43_7d24s"]
-[ext_resource type="Script" uid="uid://c1cwfqtdyh8xe" path="res://scene/door_5.gd" id="45_pqi4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hkj0i"]
 texture = ExtResource("1_1tnxr")
@@ -1021,13 +1019,11 @@ position = Vector2(624.3288, 144.37949)
 position = Vector2(176.52658, 464.7217)
 collision_layer = 1
 collision_mask = 1
-script = ExtResource("42_ddljd")
 
 [node name="and2" parent="TileMap" instance=ExtResource("29_fo4pj")]
 position = Vector2(304.5506, 464.7217)
 collision_layer = 1
 collision_mask = 1
-script = ExtResource("42_ddljd")
 
 [node name="or" parent="TileMap" instance=ExtResource("30_1tnxr")]
 position = Vector2(240.82057, 464.7217)
@@ -1037,7 +1033,6 @@ position = Vector2(368.28064, 464.72168)
 
 [node name="door_5" parent="TileMap" instance=ExtResource("40_p8jjy")]
 position = Vector2(696.5185, 274.09555)
-script = ExtResource("45_pqi4i")
 
 [node name="Goal" parent="." instance=ExtResource("41_p8jjy")]
 position = Vector2(1424, 432)
