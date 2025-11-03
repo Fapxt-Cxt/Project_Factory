@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://dha025p5b2hu5"]
+[gd_scene load_steps=25 format=4 uid="uid://dha025p5b2hu5"]
 
 [ext_resource type="Script" uid="uid://cu8c26wne86cj" path="res://script/how_to_play_2.gd" id="1_oev5m"]
 [ext_resource type="Texture2D" uid="uid://cthwq3dod7im5" path="res://Assets/asset main/page-main.png" id="2_j5fjx"]
@@ -349,6 +349,8 @@ cache/0/50/0/glyphs/69/texture_idx = 0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oev5m"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8wreb"]
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oev5m"]
 texture = ExtResource("11_wr5gt")
 
@@ -416,6 +418,7 @@ offset_top = 192.0
 offset_right = 1344.0
 offset_bottom = 888.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_oev5m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8wreb")
 
 [node name="GateAnd2" type="Sprite2D" parent="ItemList"]
 position = Vector2(800, 160)
