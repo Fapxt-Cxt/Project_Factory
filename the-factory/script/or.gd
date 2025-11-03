@@ -1,9 +1,10 @@
 extends CharacterBody2D
-
+class_name ORbox
 @export var move_speed: float = 100.0
 @export var acceleration: float = 800.0
 @export var friction: float = 600.0
-
+#after door open block stop moving by removing push area's collision(dont work)
+@onready var completed_or = %CollisionShape2D
 var is_being_pushed: bool = false
 var push_direction: Vector2 = Vector2.ZERO
 var pushers: Array[Node2D] = []
@@ -66,3 +67,7 @@ func _on_pusher_exited(body: Node2D):
 
 func stop_push():
 	is_being_pushed = false
+
+
+func _on_area_2d_or_box_comp() -> void:
+	completed_or.set_deferred("disabled", true)

@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name NOTbox
 @export var move_speed: float = 100.0
 @export var acceleration: float = 800.0
 @export var friction: float = 600.0
