@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7mo1r16ti4yt"]
+[gd_scene load_steps=11 format=3 uid="uid://b7mo1r16ti4yt"]
 
 [ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="1_da3bo"]
+[ext_resource type="Script" uid="uid://crix4n3wk355n" path="res://script/level_pass.gd" id="1_emuij"]
 [ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="2_yu27i"]
 [ext_resource type="Texture2D" uid="uid://dfqqvxmdthffq" path="res://Assets/asset main/PastelUIFree2.png" id="3_jtlhc"]
 [ext_resource type="Texture2D" uid="uid://4it44v6hhvhm" path="res://Assets/asset main/star.png" id="4_icnjk"]
@@ -31,6 +32,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_emuij")
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16470589, 0.17254902, 0.17254902, 0.7137255)
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -152,3 +163,6 @@ offset_bottom = 47.625
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_icnjk")
+
+[connection signal="pressed" from="home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="replay" to="." method="_on_replay_pressed"]

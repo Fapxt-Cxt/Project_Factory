@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://bn1r64scp3voo"]
+[gd_scene load_steps=101 format=3 uid="uid://bn1r64scp3voo"]
 
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_2qcq1"]
 [ext_resource type="Texture2D" uid="uid://dts060waio2l" path="res://Assets/picture/2line-box-right.png" id="2_xix4v"]
@@ -37,7 +37,9 @@
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_8wc55"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="38_wbsrc"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="39_m50gw"]
-[ext_resource type="PackedScene" path="res://scene/door.tscn" id="40_y8cbd"]
+[ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="39_s3rec"]
+[ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="39_v4elb"]
+[ext_resource type="PackedScene" uid="uid://c1fcgx0dw7q7e" path="res://scene/door.tscn" id="40_y8cbd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kyg4a"]
 texture = ExtResource("1_2qcq1")
@@ -1037,6 +1039,11 @@ position = Vector2(208.59317, 432.35675)
 [node name="door" parent="TileMap" instance=ExtResource("40_y8cbd")]
 position = Vector2(664.78894, 279.02728)
 
+[node name="Goal" parent="." instance=ExtResource("39_v4elb")]
+position = Vector2(1440, 464)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelPass" parent="CanvasLayer" instance=ExtResource("39_s3rec")]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_8wc55")]
