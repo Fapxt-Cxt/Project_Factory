@@ -15,6 +15,10 @@ run/main_scene="uid://bua4wpbug8mn0"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Assets/map 4/icon.svg"
 
+[autoload]
+
+GlobalAudioStreamPlayer="*res://sound/audio_stream_player.tscn"
+
 [display]
 
 window/size/viewport_width=1545
