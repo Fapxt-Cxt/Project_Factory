@@ -12,6 +12,7 @@ func _on_area_2d_not_box_comp():
 		collision_shape.set_deferred("disabled", true)
 		$AnimatedSprite2D.play("door_open")
 		completed.emit()
+#detect if both are right lol
 func _on_area_2d_2_and_box_comp():
 	point+=1
 	print("and")

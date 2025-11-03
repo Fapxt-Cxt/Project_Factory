@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://6573fdeqnthv"]
 
-[ext_resource type="Script" uid="uid://cy78pqo4ggflp" path="res://scene/door.gd" id="1_m8c1j"]
+[ext_resource type="Script" uid="uid://bok8npq3nr4ee" path="res://scene/door_2.gd" id="1_m8c1j"]
 [ext_resource type="Texture2D" uid="uid://b16fhveq380f5" path="res://Assets/picture/door.png" id="2_lvdda"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y5pye"]
@@ -33,7 +33,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y5pye"]
 size = Vector2(7, 88)
 
-[node name="door" type="CharacterBody2D"]
+[node name="door_2" type="CharacterBody2D"]
 script = ExtResource("1_m8c1j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

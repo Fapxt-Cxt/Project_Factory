@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=3 uid="uid://bn1r64scp3voo"]
+[gd_scene load_steps=102 format=3 uid="uid://bn1r64scp3voo"]
 
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_2qcq1"]
 [ext_resource type="Texture2D" uid="uid://dts060waio2l" path="res://Assets/picture/2line-box-right.png" id="2_xix4v"]
@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://dgg1l0mlo3q8n" path="res://Assets/picture/box-left.png" id="35_40mc0"]
 [ext_resource type="Texture2D" uid="uid://c5osm023k55mv" path="res://Assets/picture/box-right.png" id="36_vk13w"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="37_p6dpt"]
+[ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="38_4ixja"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_8wc55"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="38_wbsrc"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="39_m50gw"]
@@ -1039,11 +1040,19 @@ position = Vector2(208.59317, 432.35675)
 [node name="door" parent="TileMap" instance=ExtResource("40_y8cbd")]
 position = Vector2(664.78894, 279.02728)
 
+[node name="Area2D" parent="TileMap" instance=ExtResource("38_4ixja")]
+position = Vector2(462.69757, 269.81662)
+
 [node name="Goal" parent="." instance=ExtResource("39_v4elb")]
 position = Vector2(1440, 464)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("39_s3rec")]
+visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_8wc55")]
+visible = false
+
+[connection signal="completed" from="TileMap/door" to="TileMap/LED" method="_on_door_completed"]
+[connection signal="OR_BOX_COMP" from="TileMap/Area2D" to="TileMap/door" method="_on_area_2d_or_box_comp"]
