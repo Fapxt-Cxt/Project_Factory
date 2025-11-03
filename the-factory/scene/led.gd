@@ -12,3 +12,11 @@ func _on_door_2_completed() -> void:
 
 func _on_door_3_completed() -> void:
 	%AnimatedSprite2D.play("LED_on")
+
+
+func _on_door_4_completed() -> void:
+	%AnimatedSprite2D.play("LED_on")
+
+
+func _on_door_5_completed() -> void:
+	%AnimatedSprite2D.play("LED_on")
