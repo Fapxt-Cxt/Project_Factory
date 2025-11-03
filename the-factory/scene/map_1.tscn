@@ -37,7 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_8wc55"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="38_wbsrc"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="39_m50gw"]
-[ext_resource type="PackedScene" uid="uid://c1fcgx0dw7q7e" path="res://scene/door.tscn" id="40_y8cbd"]
+[ext_resource type="PackedScene" path="res://scene/door.tscn" id="40_y8cbd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kyg4a"]
 texture = ExtResource("1_2qcq1")
@@ -1038,6 +1038,5 @@ position = Vector2(208.59317, 432.35675)
 position = Vector2(664.24725, 276.31824)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_8wc55")]
