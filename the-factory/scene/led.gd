@@ -8,3 +8,7 @@ func _on_door_completed():
 #same code different level what a devilish idea
 func _on_door_2_completed() -> void:
 	%AnimatedSprite2D.play("LED_on")
+
+
+func _on_door_3_completed() -> void:
+	%AnimatedSprite2D.play("LED_on")
