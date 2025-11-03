@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://dup4u5dr83bj0"]
+[gd_scene load_steps=99 format=3 uid="uid://dup4u5dr83bj0"]
 
 [ext_resource type="Texture2D" uid="uid://bdsllusnr20qj" path="res://Assets/picture/2line-broke-down.png" id="1_1tnxr"]
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_o43if"]
@@ -39,10 +39,16 @@
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_008qc"]
 [ext_resource type="Texture2D" uid="uid://d1yq3gp843jh5" path="res://Assets/picture/tilesStuff32.png" id="32_niyvj"]
 [ext_resource type="Texture2D" uid="uid://dlt88iydn4n40" path="res://Assets/picture/asset1.png" id="33_gb83d"]
-[ext_resource type="PackedScene" uid="uid://c1fcgx0dw7q7e" path="res://scene/door.tscn" id="38_q5upg"]
+[ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="36_7hbql"]
+[ext_resource type="Script" uid="uid://dobuupffj4o8y" path="res://script/detectAND.gd" id="37_pqi4i"]
+[ext_resource type="Script" uid="uid://m606mdomifi5" path="res://script/detectAnd2.gd" id="38_ddljd"]
+[ext_resource type="PackedScene" uid="uid://drbjnr1bxarp3" path="res://scene/NOT_detect.tscn" id="38_pqi4i"]
+[ext_resource type="PackedScene" uid="uid://msh22qf3exg5" path="res://scene/door_5.tscn" id="40_p8jjy"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="41_gb83d"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="41_p8jjy"]
+[ext_resource type="Script" uid="uid://ltpjn6v7tx1e" path="res://script/and.gd" id="42_ddljd"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="43_7d24s"]
+[ext_resource type="Script" uid="uid://c1cwfqtdyh8xe" path="res://scene/door_5.gd" id="45_pqi4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hkj0i"]
 texture = ExtResource("1_1tnxr")
@@ -994,6 +1000,20 @@ shape = SubResource("RectangleShape2D_7hbql")
 position = Vector2(204.1617, 138.73972)
 shape = SubResource("RectangleShape2D_t0p8s")
 
+[node name="Area2D" parent="TileMap" instance=ExtResource("36_7hbql")]
+position = Vector2(562.8546, 208.10959)
+script = ExtResource("37_pqi4i")
+
+[node name="Area2D2" parent="TileMap" instance=ExtResource("36_7hbql")]
+position = Vector2(463.02972, 432.57465)
+script = ExtResource("38_ddljd")
+
+[node name="Area2D3" parent="TileMap" instance=ExtResource("36_7hbql")]
+position = Vector2(369.4086, 146.0715)
+
+[node name="Area2D4" parent="TileMap" instance=ExtResource("38_pqi4i")]
+position = Vector2(272.4036, 273.53156)
+
 [node name="LED" parent="TileMap" instance=ExtResource("28_61kk4")]
 position = Vector2(624.3288, 144.37949)
 
@@ -1001,11 +1021,13 @@ position = Vector2(624.3288, 144.37949)
 position = Vector2(176.52658, 464.7217)
 collision_layer = 1
 collision_mask = 1
+script = ExtResource("42_ddljd")
 
 [node name="and2" parent="TileMap" instance=ExtResource("29_fo4pj")]
 position = Vector2(304.5506, 464.7217)
 collision_layer = 1
 collision_mask = 1
+script = ExtResource("42_ddljd")
 
 [node name="or" parent="TileMap" instance=ExtResource("30_1tnxr")]
 position = Vector2(240.82057, 464.7217)
@@ -1013,8 +1035,9 @@ position = Vector2(240.82057, 464.7217)
 [node name="not" parent="TileMap" instance=ExtResource("31_hkj0i")]
 position = Vector2(368.28064, 464.72168)
 
-[node name="door" parent="TileMap" instance=ExtResource("38_q5upg")]
-position = Vector2(697.0825, 280.29932)
+[node name="door_5" parent="TileMap" instance=ExtResource("40_p8jjy")]
+position = Vector2(696.5185, 274.09555)
+script = ExtResource("45_pqi4i")
 
 [node name="Goal" parent="." instance=ExtResource("41_p8jjy")]
 position = Vector2(1424, 432)
@@ -1022,5 +1045,14 @@ position = Vector2(1424, 432)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("41_gb83d")]
+visible = false
 
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("43_7d24s")]
+visible = false
+
+[connection signal="AND_BOX_COMP_1" from="TileMap/Area2D" to="TileMap/door_5" method="_on_area_2d_and_box_comp_1"]
+[connection signal="AND_BOX_COMP_2" from="TileMap/Area2D2" to="TileMap/door_5" method="_on_area_2d_2_and_box_comp_2"]
+[connection signal="OR_BOX_COMP" from="TileMap/Area2D3" to="TileMap/Area2D" method="_on_area_2d_3_or_box_comp"]
+[connection signal="OR_BOX_COMP" from="TileMap/Area2D3" to="TileMap/door_5" method="_on_area_2d_3_or_box_comp"]
+[connection signal="NOT_BOX_COMP" from="TileMap/Area2D4" to="TileMap/door_5" method="_on_area_2d_4_not_box_comp"]
+[connection signal="completed" from="TileMap/door_5" to="TileMap/LED" method="_on_door_5_completed"]
