@@ -1,7 +1,7 @@
 
 extends CharacterBody2D
 
-const SPEED = 200
+const SPEED = 165
 
 var last_movement_direction: Vector2 = Vector2.ZERO
 

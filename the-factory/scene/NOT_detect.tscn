@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://drbjnr1bxarp3"]
+
+[ext_resource type="Script" uid="uid://5onyqplnh0aa" path="res://script/detectNOT.gd" id="1_weyws"]
+[ext_resource type="Shape2D" uid="uid://s6by1ydas4a2" path="res://script/boxes.tres" id="2_67ex5"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_weyws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("2_67ex5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

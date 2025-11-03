@@ -1,25 +1,24 @@
-[gd_scene load_steps=11 format=3 uid="uid://b7mo1r16ti4yt"]
+[gd_scene load_steps=10 format=3 uid="uid://buu6rv7kaxj7t"]
 
-[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="1_da3bo"]
-[ext_resource type="Script" uid="uid://crix4n3wk355n" path="res://script/level_pass.gd" id="1_emuij"]
-[ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="2_yu27i"]
-[ext_resource type="Texture2D" uid="uid://dfqqvxmdthffq" path="res://Assets/asset main/PastelUIFree2.png" id="3_jtlhc"]
-[ext_resource type="Texture2D" uid="uid://4it44v6hhvhm" path="res://Assets/asset main/star.png" id="4_icnjk"]
+[ext_resource type="Texture2D" uid="uid://cfqyo5v80o2km" path="res://Assets/asset main/UI_TravelBook_BookCover01a.png" id="1_3v3kl"]
+[ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="2_3upft"]
+[ext_resource type="Texture2D" uid="uid://dfqqvxmdthffq" path="res://Assets/asset main/PastelUIFree2.png" id="3_u3lah"]
+[ext_resource type="Texture2D" uid="uid://4it44v6hhvhm" path="res://Assets/asset main/star.png" id="4_gv3nw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yu27i"]
-texture = ExtResource("1_da3bo")
+texture = ExtResource("1_3v3kl")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_icnjk"]
-texture = ExtResource("3_jtlhc")
+texture = ExtResource("3_u3lah")
 region_rect = Rect2(183, 224, 52, 15)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_emuij"]
-texture = ExtResource("3_jtlhc")
+texture = ExtResource("3_u3lah")
 region_rect = Rect2(183, 224, 52, 15)
 modulate_color = Color(0.7921569, 0.7921569, 0.7921569, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f2l4l"]
-texture = ExtResource("3_jtlhc")
+texture = ExtResource("3_u3lah")
 region_rect = Rect2(183, 224, 52, 15)
 modulate_color = Color(0.7921569, 0.7921569, 0.7921569, 1)
 
@@ -32,16 +31,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_emuij")
-
-[node name="Bg" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.16470589, 0.17254902, 0.17254902, 0.7137255)
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -71,7 +60,7 @@ offset_right = 346.5
 offset_bottom = -124.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_yu27i")
+theme_override_fonts/font = ExtResource("2_3upft")
 theme_override_font_sizes/font_size = 128
 text = "Level Pass"
 horizontal_alignment = 1
@@ -89,7 +78,7 @@ offset_right = -10.229736
 offset_bottom = 224.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_yu27i")
+theme_override_fonts/font = ExtResource("2_3upft")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxTexture_icnjk")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_emuij")
@@ -111,7 +100,7 @@ offset_right = 349.77026
 offset_bottom = 224.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_yu27i")
+theme_override_fonts/font = ExtResource("2_3upft")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxTexture_icnjk")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_emuij")
@@ -132,7 +121,7 @@ offset_right = 256.75
 offset_bottom = 47.25
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_icnjk")
+texture = ExtResource("4_gv3nw")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 1
@@ -147,7 +136,7 @@ offset_right = -100.375
 offset_bottom = 47.625
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_icnjk")
+texture = ExtResource("4_gv3nw")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -162,7 +151,4 @@ offset_right = 77.625
 offset_bottom = 47.625
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_icnjk")
-
-[connection signal="pressed" from="home" to="." method="_on_home_pressed"]
-[connection signal="pressed" from="replay" to="." method="_on_replay_pressed"]
+texture = ExtResource("4_gv3nw")

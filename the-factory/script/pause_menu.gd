@@ -1,0 +1,27 @@
+extends Control
+
+var _is_paused: bool = false:
+	set = set_paused
+
+func _ready() -> void:
+	set_paused(false)
+
+func _unhandled_input(event):
+	if event.is_action_pressed("pause"):
+		set_paused(!_is_paused)
+
+func set_paused(value: bool) -> void:
+	_is_paused = value
+	get_tree().paused = _is_paused
+	visible = _is_paused
+
+func _on_resume_pressed() -> void:
+	set_paused(false)
+
+func _on_replay_pressed() -> void:
+	get_tree().paused = false
+	get_tree().reload_current_scene()
+
+func _on_quit_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://scene/level_select.tscn")

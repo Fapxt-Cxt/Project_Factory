@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpph5yc2her67"]
+
+[ext_resource type="AudioStream" uid="uid://cs872leg2kcci" path="res://sound/mischief-in-the-garden-by-audio-library-beats.mp3" id="1_467g6"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_467g6")
+autoplay = true

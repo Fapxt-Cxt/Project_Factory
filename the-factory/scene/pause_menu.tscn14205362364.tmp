@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkyybqyj0x5vj"]
+
+[ext_resource type="Script" uid="uid://c8jj4l7dlrtjd" path="res://script/pause_menu.gd" id="1_cq4tv"]
+[ext_resource type="FontFile" uid="uid://bq07fs31x573o" path="res://Assets/asset main/ThaleahFat.ttf" id="1_me6vf"]
+[ext_resource type="Texture2D" uid="uid://v88jfut30g3m" path="res://Assets/asset main/button_pause.png" id="2_cq4tv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ug2vv"]
+texture = ExtResource("2_cq4tv")
+region_rect = Rect2(6, 9, 53, 15)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qbwph"]
+texture = ExtResource("2_cq4tv")
+region_rect = Rect2(6, 9, 53, 15)
+modulate_color = Color(0.7921569, 0.7921569, 0.7921569, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4q2vw"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cq4tv")
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16470589, 0.17254902, 0.17254902, 0.7137255)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.25879
+offset_top = -162.92508
+offset_right = 167.25879
+offset_bottom = 162.92508
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Resume" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_me6vf")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ug2vv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4q2vw")
+text = "Resume"
+
+[node name="Replay" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_me6vf")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ug2vv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4q2vw")
+text = "Replay"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_me6vf")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ug2vv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qbwph")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4q2vw")
+text = "quit
+"
+
+[connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/Replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
