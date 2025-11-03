@@ -5,6 +5,6 @@ func _ready():
 func _on_door_completed():
 	%AnimatedSprite2D.play("LED_on")
 
-
+#same code different level what a devilish idea
 func _on_door_2_completed() -> void:
 	%AnimatedSprite2D.play("LED_on")

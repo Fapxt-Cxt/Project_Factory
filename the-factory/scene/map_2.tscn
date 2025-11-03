@@ -1,10 +1,9 @@
-[gd_scene load_steps=37 format=3 uid="uid://b406iappdhd0o"]
+[gd_scene load_steps=36 format=3 uid="uid://b406iappdhd0o"]
 
 [ext_resource type="TileSet" uid="uid://c0pl8qy0lifd4" path="res://scene/map_2.tres" id="1_67ifn"]
-[ext_resource type="PackedScene" uid="uid://dy4kg1mxv7twn" path="res://scene/AND_detect.tscn" id="2_yvte5"]
-[ext_resource type="PackedScene" uid="uid://drbjnr1bxarp3" path="res://scene/NOT_detect.tscn" id="3_4uhhv"]
-[ext_resource type="PackedScene" uid="uid://6573fdeqnthv" path="res://scene/door_2.tscn" id="6_tv6bo"]
-[ext_resource type="Script" uid="uid://bok8npq3nr4ee" path="res://scene/door_2.gd" id="7_7mvp6"]
+[ext_resource type="PackedScene" uid="uid://drbjnr1bxarp3" path="res://scene/NOT_detect.tscn" id="3_7mvp6"]
+[ext_resource type="PackedScene" uid="uid://dy4kg1mxv7twn" path="res://scene/AND_detect.tscn" id="5_yvte5"]
+[ext_resource type="PackedScene" uid="uid://6573fdeqnthv" path="res://scene/door_2.tscn" id="7_7mvp6"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="7_gpxrc"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="7_ttrcm"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="9_tv6bo"]
@@ -282,17 +281,17 @@ shape = SubResource("RectangleShape2D_xp0yw")
 position = Vector2(687.48285, 234.94403)
 shape = SubResource("RectangleShape2D_vwl8v")
 
-[node name="Area2D2" parent="TileMap" instance=ExtResource("2_yvte5")]
-position = Vector2(335.37448, 273.0674)
-
-[node name="Area2D" parent="TileMap" instance=ExtResource("3_4uhhv")]
-position = Vector2(527.7136, 208.59317)
-
 [node name="LED" parent="TileMap" instance=ExtResource("31_pniik")]
 position = Vector2(592.7296, 144.11891)
 
+[node name="Area2D" parent="TileMap" instance=ExtResource("3_7mvp6")]
+position = Vector2(527.7136, 208.05136)
+
 [node name="players" parent="TileMap" instance=ExtResource("32_eh8v0")]
 position = Vector2(81.270065, 112.69449)
+
+[node name="Area2D2" parent="TileMap" instance=ExtResource("5_yvte5")]
+position = Vector2(336.45807, 271.98383)
 
 [node name="not" parent="TileMap" instance=ExtResource("33_2yh43")]
 position = Vector2(336.45804, 432.35675)
@@ -302,11 +301,8 @@ position = Vector2(400.3905, 432.35672)
 collision_layer = 1
 collision_mask = 1
 
-[node name="door_2" parent="TileMap" instance=ExtResource("6_tv6bo")]
-position = Vector2(665.33093, 279.02722)
-collision_layer = 3
-collision_mask = 3
-script = ExtResource("7_7mvp6")
+[node name="door_2" parent="TileMap" instance=ExtResource("7_7mvp6")]
+position = Vector2(665.33093, 290.94684)
 
 [node name="Goal" parent="." instance=ExtResource("7_gpxrc")]
 position = Vector2(1488, 464)
@@ -320,6 +316,6 @@ metadata/_edit_use_anchors_ = true
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("9_tv6bo")]
 visible = false
 
-[connection signal="AND_BOX_COMP" from="TileMap/Area2D2" to="TileMap/door_2" method="_on_area_2d_2_and_box_comp"]
 [connection signal="NOT_BOX_COMP" from="TileMap/Area2D" to="TileMap/door_2" method="_on_area_2d_not_box_comp"]
+[connection signal="AND_BOX_COMP" from="TileMap/Area2D2" to="TileMap/door_2" method="_on_area_2d_2_and_box_comp"]
 [connection signal="completed" from="TileMap/door_2" to="TileMap/LED" method="_on_door_2_completed"]

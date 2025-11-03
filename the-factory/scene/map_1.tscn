@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://bn1r64scp3voo"]
+[gd_scene load_steps=102 format=3 uid="uid://bn1r64scp3voo"]
 
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_2qcq1"]
 [ext_resource type="Texture2D" uid="uid://dts060waio2l" path="res://Assets/picture/2line-box-right.png" id="2_xix4v"]
@@ -30,16 +30,15 @@
 [ext_resource type="Texture2D" uid="uid://b84gol24b2067" path="res://Assets/picture/2line-half-up.png" id="31_ba3xq"]
 [ext_resource type="Texture2D" uid="uid://dymevdnesoms6" path="res://Assets/picture/2line.png" id="32_qpqqb"]
 [ext_resource type="Texture2D" uid="uid://dip44xxy4xpoy" path="res://Assets/picture/3-line.png" id="33_fjo44"]
-[ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="34_4ixja"]
 [ext_resource type="Texture2D" uid="uid://cr72p87x7ogql" path="res://Assets/picture/4-line.png" id="34_drp8p"]
 [ext_resource type="Texture2D" uid="uid://dgg1l0mlo3q8n" path="res://Assets/picture/box-left.png" id="35_40mc0"]
 [ext_resource type="Texture2D" uid="uid://c5osm023k55mv" path="res://Assets/picture/box-right.png" id="36_vk13w"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="37_p6dpt"]
+[ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="38_4ixja"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_8wc55"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="38_wbsrc"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="39_m50gw"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="39_s3rec"]
-[ext_resource type="Script" uid="uid://cy78pqo4ggflp" path="res://scene/door.gd" id="39_umsae"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="39_v4elb"]
 [ext_resource type="PackedScene" uid="uid://c1fcgx0dw7q7e" path="res://scene/door.tscn" id="40_y8cbd"]
 
@@ -869,9 +868,6 @@ layer_7/z_index = 1
 layer_7/navigation_enabled = false
 layer_7/tile_data = PackedInt32Array(720907, 1966115, 7, 786443, 1966115, 8, 851979, 1966115, 9, 917515, 1966115, 10, 720908, 2031651, 7, 786444, 2031651, 8, 851980, 2031651, 9, 917516, 2031651, 10, 720909, 2097187, 7, 786445, 2097187, 8, 851981, 2097187, 9, 917517, 2097187, 10, 720910, 1966115, 7, 786446, 1966115, 8, 851982, 1966115, 9, 917518, 1966115, 10, 720911, 2031651, 7, 786447, 2031651, 8, 851983, 2031651, 9, 917519, 2031651, 10, 720912, 2097187, 7, 786448, 2097187, 8, 851984, 2097187, 9, 917520, 2097187, 10, 720913, 1966115, 7, 786449, 1966115, 8, 851985, 1966115, 9, 917521, 1966115, 10, 720914, 2031651, 7, 786450, 2031651, 8, 851986, 2031651, 9, 917522, 2031651, 10, 720915, 2097187, 7, 786451, 2097187, 8, 851987, 2097187, 9, 917523, 2097187, 10, 327693, 2162723, 12, 393229, 2162723, 13, 327694, 2228259, 12, 393230, 2228259, 13, 327695, 2293795, 12, 393231, 2293795, 13, 131076, 2162723, 14, 196612, 2162723, 15, 131077, 2228259, 14, 196613, 2228259, 15, 131078, 2293795, 14, 196614, 2293795, 15, 327697, 1703971, 11, 393233, 1703971, 12, 327698, 1769507, 11, 393234, 1769507, 12, 327699, 1835043, 11, 393235, 1835043, 12)
 
-[node name="Area2D" parent="TileMap" instance=ExtResource("34_4ixja")]
-position = Vector2(464.32297, 272.52563)
-
 [node name="players" parent="TileMap" instance=ExtResource("37_p6dpt")]
 position = Vector2(81.270065, 112.69449)
 
@@ -1042,10 +1038,10 @@ position = Vector2(592.18787, 303.95004)
 position = Vector2(208.59317, 432.35675)
 
 [node name="door" parent="TileMap" instance=ExtResource("40_y8cbd")]
-position = Vector2(665.3309, 279.02722)
-collision_layer = 3
-collision_mask = 3
-script = ExtResource("39_umsae")
+position = Vector2(664.78894, 279.02728)
+
+[node name="Area2D" parent="TileMap" instance=ExtResource("38_4ixja")]
+position = Vector2(462.69757, 269.81662)
 
 [node name="Goal" parent="." instance=ExtResource("39_v4elb")]
 position = Vector2(1440, 464)
@@ -1058,6 +1054,5 @@ visible = false
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_8wc55")]
 visible = false
 
-[connection signal="OR_BOX_COMP" from="TileMap/Area2D" to="TileMap/or" method="_on_area_2d_or_box_comp"]
-[connection signal="OR_BOX_COMP" from="TileMap/Area2D" to="TileMap/door" method="_on_area_2d_or_box_comp"]
 [connection signal="completed" from="TileMap/door" to="TileMap/LED" method="_on_door_completed"]
+[connection signal="OR_BOX_COMP" from="TileMap/Area2D" to="TileMap/door" method="_on_area_2d_or_box_comp"]
