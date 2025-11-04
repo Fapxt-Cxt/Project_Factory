@@ -1039,6 +1039,8 @@ position = Vector2(208.59317, 432.35675)
 
 [node name="door" parent="TileMap" instance=ExtResource("40_y8cbd")]
 position = Vector2(664.78894, 279.02728)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Area2D" parent="TileMap" instance=ExtResource("38_4ixja")]
 position = Vector2(462.69757, 269.81662)

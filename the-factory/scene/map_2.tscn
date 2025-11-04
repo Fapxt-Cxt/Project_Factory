@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="9_tv6bo"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="31_pniik"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_eh8v0"]
-[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="33_2yh43"]
+[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="33_2yh43"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="34_5gj5n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_algmk"]
@@ -303,6 +303,8 @@ collision_mask = 1
 
 [node name="door_2" parent="TileMap" instance=ExtResource("7_7mvp6")]
 position = Vector2(665.33093, 290.94684)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Goal" parent="." instance=ExtResource("7_gpxrc")]
 position = Vector2(1488, 464)
