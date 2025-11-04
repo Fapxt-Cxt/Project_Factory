@@ -317,5 +317,5 @@ metadata/_edit_use_anchors_ = true
 visible = false
 
 [connection signal="NOT_BOX_COMP" from="TileMap/Area2D" to="TileMap/door_2" method="_on_area_2d_not_box_comp"]
-[connection signal="AND_BOX_COMP" from="TileMap/Area2D2" to="TileMap/door_2" method="_on_area_2d_2_and_box_comp"]
+[connection signal="AND_BOX_COMP_1" from="TileMap/Area2D2" to="TileMap/door_2" method="_on_area_2d_2_and_box_comp_1"]
 [connection signal="completed" from="TileMap/door_2" to="TileMap/LED" method="_on_door_2_completed"]

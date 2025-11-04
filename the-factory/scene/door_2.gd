@@ -13,7 +13,10 @@ func _on_area_2d_not_box_comp():
 		$AnimatedSprite2D.play("door_open")
 		completed.emit()
 #detect if both are right lol
-func _on_area_2d_2_and_box_comp():
+
+
+
+func _on_area_2d_2_and_box_comp_1() -> void:
 	point+=1
 	print("and")
 	if point==2:
