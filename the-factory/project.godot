@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The factory"
-run/main_scene="uid://c1fcgx0dw7q7e"
+run/main_scene="uid://cdcpn2ts083vh"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Assets/map 4/icon.svg"
 
