@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=3 uid="uid://d22vnkefn50tm"]
+[gd_scene load_steps=97 format=3 uid="uid://d22vnkefn50tm"]
 
 [ext_resource type="Texture2D" uid="uid://jnvcy8potdge" path="res://Assets/picture/2line-box-left.png" id="1_373pr"]
 [ext_resource type="Texture2D" uid="uid://dts060waio2l" path="res://Assets/picture/2line-box-right.png" id="2_ld6lw"]
@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://dlt88iydn4n40" path="res://Assets/picture/asset1.png" id="26_citsy"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="27_xut0s"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="28_du6a4"]
-[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="29_7oa6e"]
+[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="29_7oa6e"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_txoda"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="38_1odko"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="38_citsy"]
@@ -42,7 +42,6 @@
 [ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="38_wyiyo"]
 [ext_resource type="PackedScene" uid="uid://dsoberogim7ft" path="res://scene/door_3.tscn" id="39_w0lfs"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="40_1svra"]
-[ext_resource type="Script" uid="uid://beholjv2mjchg" path="res://scene/door_3.gd" id="40_w0lfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8175"]
 texture = ExtResource("1_373pr")
@@ -1087,10 +1086,9 @@ position = Vector2(462.81747, 238.8946)
 position = Vector2(304.28024, 144.96559)
 
 [node name="door_3" parent="TileMap" instance=ExtResource("39_w0lfs")]
-position = Vector2(665.8564, 293.18884)
+position = Vector2(664.7439, 293.18884)
 collision_layer = 3
 collision_mask = 3
-script = ExtResource("40_w0lfs")
 
 [node name="Goal" parent="." instance=ExtResource("38_1odko")]
 position = Vector2(1443, 461)

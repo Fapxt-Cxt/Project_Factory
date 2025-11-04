@@ -35,7 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://bflcwm8pcmnsh" path="res://Assets/picture/stairs3.png" id="28_niyvj"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="29_fo4pj"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_1tnxr"]
-[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="31_hkj0i"]
+[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="31_hkj0i"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_008qc"]
 [ext_resource type="Texture2D" uid="uid://d1yq3gp843jh5" path="res://Assets/picture/tilesStuff32.png" id="32_niyvj"]
 [ext_resource type="Texture2D" uid="uid://dlt88iydn4n40" path="res://Assets/picture/asset1.png" id="33_gb83d"]
@@ -1032,7 +1032,7 @@ position = Vector2(240.82057, 464.7217)
 position = Vector2(368.28064, 464.72168)
 
 [node name="door_5" parent="TileMap" instance=ExtResource("40_p8jjy")]
-position = Vector2(696.5185, 274.09555)
+position = Vector2(697.0824, 274.09552)
 
 [node name="Goal" parent="." instance=ExtResource("41_p8jjy")]
 position = Vector2(1424, 432)

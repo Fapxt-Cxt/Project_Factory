@@ -41,7 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="37_fs6ad"]
 [ext_resource type="PackedScene" uid="uid://do15q8oyj1eqv" path="res://scene/OR_dectect.tscn" id="37_gxbr5"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="38_5q8ha"]
-[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="39_4d6g1"]
+[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="39_4d6g1"]
 [ext_resource type="PackedScene" uid="uid://djrqleosddwt1" path="res://scene/goal.tscn" id="40_oo22a"]
 [ext_resource type="PackedScene" uid="uid://bkyybqyj0x5vj" path="res://scene/pause_menu.tscn" id="41_kf3s0"]
 [ext_resource type="PackedScene" uid="uid://b7mo1r16ti4yt" path="res://scene/level_pass.tscn" id="42_al4ji"]
@@ -1008,7 +1008,7 @@ light_mask = 3
 visibility_layer = 3
 
 [node name="door_4" parent="TileMap" instance=ExtResource("35_m07s5")]
-position = Vector2(665.3982, 248.83919)
+position = Vector2(664.8501, 248.8392)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("36_gxbr5")
