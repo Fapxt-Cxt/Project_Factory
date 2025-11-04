@@ -526,7 +526,7 @@ scale = Vector2(2.5, 2.5)
 texture = ExtResource("8_4jtx2")
 
 [node name="GreenGate7" type="Sprite2D" parent="ItemList"]
-position = Vector2(960, 618.00006)
+position = Vector2(956, 618.00006)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("8_4jtx2")
 
@@ -561,7 +561,7 @@ scale = Vector2(2.5, 2.5)
 texture = ExtResource("9_0ddxg")
 
 [node name="ZeroGate7" type="Sprite2D" parent="ItemList"]
-position = Vector2(640.99994, 617.00006)
+position = Vector2(643, 618)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("9_0ddxg")
 
