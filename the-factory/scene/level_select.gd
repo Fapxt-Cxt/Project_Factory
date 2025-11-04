@@ -24,11 +24,11 @@ func _on_level_button_2_pressed() -> void:
 
 
 func _on_level_button_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://scene/map3.tscn")
+	get_tree().change_scene_to_file("res://scene/map_3.tscn")
 
 
 func _on_level_button_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://scene/map4.tscn")
+	get_tree().change_scene_to_file("res://scene/map_4.tscn")
 
 
 func _on_level_button_5_pressed() -> void:
