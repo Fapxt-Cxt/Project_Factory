@@ -786,10 +786,10 @@ size = Vector2(156.18561, 49.032917)
 size = Vector2(40.09323, 464.19916)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f31bm"]
-size = Vector2(10.294197, 178.64703)
+size = Vector2(9.752413, 214.94766)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgujv"]
-size = Vector2(13.003174, 160.07867)
+size = Vector2(10.835999, 198.29903)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3cdxw"]
 size = Vector2(5.6655273, 239.18158)
@@ -928,11 +928,11 @@ position = Vector2(28.173622, 267.6494)
 shape = SubResource("RectangleShape2D_yfr15")
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(665.6018, 132.27287)
+position = Vector2(665.8728, 150.42322)
 shape = SubResource("RectangleShape2D_f31bm")
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(663.7055, 418.41705)
+position = Vector2(667.4981, 399.30695)
 shape = SubResource("RectangleShape2D_bgujv")
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
@@ -1051,10 +1051,8 @@ position = Vector2(1440, 464)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("39_s3rec")]
-visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_8wc55")]
-visible = false
 
 [connection signal="completed" from="TileMap/door" to="TileMap/LED" method="_on_door_completed"]
 [connection signal="OR_BOX_COMP" from="TileMap/Area2D" to="TileMap/door" method="_on_area_2d_or_box_comp"]

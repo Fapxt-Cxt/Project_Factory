@@ -35,7 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://bflcwm8pcmnsh" path="res://Assets/picture/stairs3.png" id="28_niyvj"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="29_fo4pj"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_1tnxr"]
-[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="31_hkj0i"]
+[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="31_hkj0i"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_008qc"]
 [ext_resource type="Texture2D" uid="uid://d1yq3gp843jh5" path="res://Assets/picture/tilesStuff32.png" id="32_niyvj"]
 [ext_resource type="Texture2D" uid="uid://dlt88iydn4n40" path="res://Assets/picture/asset1.png" id="33_gb83d"]
@@ -772,7 +772,7 @@ size = Vector2(129.99799, 508.63647)
 size = Vector2(6.7677307, 252.17607)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5upg"]
-size = Vector2(10.139035, 200.41998)
+size = Vector2(11.8374, 239.41064)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_niyvj"]
 size = Vector2(323.93225, 29.891033)
@@ -935,11 +935,11 @@ position = Vector2(854.99756, 287.31122)
 shape = SubResource("RectangleShape2D_edsu2")
 
 [node name="CollisionShape2D26" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(695.9546, 125.5892)
+position = Vector2(695.1053, 136.34279)
 shape = SubResource("RectangleShape2D_q5upg")
 
 [node name="CollisionShape2D27" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(696.52484, 431.44675)
+position = Vector2(695.3969, 418.75717)
 shape = SubResource("RectangleShape2D_q5upg")
 
 [node name="CollisionShape2D28" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
@@ -1032,7 +1032,9 @@ position = Vector2(240.82057, 464.7217)
 position = Vector2(368.28064, 464.72168)
 
 [node name="door_5" parent="TileMap" instance=ExtResource("40_p8jjy")]
-position = Vector2(697.0824, 274.09552)
+position = Vector2(697.08246, 278.04327)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Goal" parent="." instance=ExtResource("41_p8jjy")]
 position = Vector2(1424, 432)
@@ -1040,10 +1042,8 @@ position = Vector2(1424, 432)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("41_gb83d")]
-visible = false
 
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("43_7d24s")]
-visible = false
 
 [connection signal="AND_BOX_COMP_1" from="TileMap/Area2D" to="TileMap/door_5" method="_on_area_2d_and_box_comp_1"]
 [connection signal="AND_BOX_COMP_2" from="TileMap/Area2D2" to="TileMap/door_5" method="_on_area_2d_2_and_box_comp_2"]

@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://d1yq3gp843jh5" path="res://Assets/picture/tilesStuff32.png" id="27_8pe6h"]
 [ext_resource type="Texture2D" uid="uid://dgg1l0mlo3q8n" path="res://Assets/picture/box-left.png" id="27_rogkl"]
 [ext_resource type="PackedScene" uid="uid://dv3v1dpso15ma" path="res://scene/led.tscn" id="28_flltw"]
-[ext_resource type="PackedScene" uid="uid://cwagp572awxn0" path="res://scene/not.tscn" id="29_mmwdf"]
+[ext_resource type="PackedScene" uid="uid://cmstejkllibrn" path="res://scene/not.tscn" id="29_mmwdf"]
 [ext_resource type="PackedScene" uid="uid://b3u3cnwb872nv" path="res://scene/or.tscn" id="30_h3gt6"]
 [ext_resource type="PackedScene" uid="uid://cud2cgdan3nur" path="res://scene/and.tscn" id="31_ltaqs"]
 [ext_resource type="PackedScene" uid="uid://lfuah5okk8n" path="res://scene/players.tscn" id="32_ls1ak"]
@@ -770,10 +770,10 @@ size = Vector2(165.1134, 57.002846)
 size = Vector2(10.41391, 247.6759)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8pe6h"]
-size = Vector2(15.895039, 150.3146)
+size = Vector2(12.058293, 186.48938)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6s6dp"]
-size = Vector2(16.443092, 187.86552)
+size = Vector2(11.510187, 222.18903)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0gbv"]
 size = Vector2(31.96064, 20.41394)
@@ -921,11 +921,11 @@ position = Vector2(827.36285, 248.32465)
 shape = SubResource("RectangleShape2D_sr4og")
 
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(670.057, 117.77528)
+position = Vector2(667.5906, 135.86275)
 shape = SubResource("RectangleShape2D_8pe6h")
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
-position = Vector2(669.78296, 399.01962)
+position = Vector2(667.3165, 381.85785)
 shape = SubResource("RectangleShape2D_6s6dp")
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
@@ -1028,7 +1028,5 @@ position = Vector2(1440, 408)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("38_bidlu")]
-visible = false
 
 [node name="LevelPass" parent="CanvasLayer" instance=ExtResource("42_w0gbv")]
-visible = false
