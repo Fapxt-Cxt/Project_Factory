@@ -13,7 +13,8 @@ config_version=5
 config/name="The factory"
 run/main_scene="uid://cdcpn2ts083vh"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://Assets/map 4/icon.svg"
+boot_splash/image="uid://d23dah5b2csb0"
+config/icon="uid://d23dah5b2csb0"
 
 [autoload]
 
